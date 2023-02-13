@@ -1,9 +1,9 @@
-import { Container } from 'reactstrap';
-import { useSelector } from 'react-redux';
-import { getTrendingPhotos } from '../../../redux/photosRedux';
-import Photos from '../Photos/Photos';
+import { Container } from "reactstrap";
+import { useSelector } from "react-redux";
+import { getTrendingPhotos } from "../../../redux/photosRedux";
+import Photos from "../Photos/Photos";
 
-import './TrendingPhotos.scss';
+import "./TrendingPhotos.scss";
 
 const TrendingPhotos = () => {
   const photos = useSelector(getTrendingPhotos);
@@ -16,6 +16,6 @@ const TrendingPhotos = () => {
       </Container>
     </section>
   );
-}
+};
 
 export default TrendingPhotos;
